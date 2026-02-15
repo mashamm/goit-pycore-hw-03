@@ -1,6 +1,5 @@
 import re
 
-
 def normalize_phone(phone_number):
     """
     Normalize phone number to international format.
@@ -26,7 +25,6 @@ def main():
     raw_numbers = input("Enter phone numbers (comma-separated): ").split(",")
     sanitized = [n for num in raw_numbers if (n := normalize_phone(num.strip()))]
     print("Нормалізовані номери:", sanitized)
-
 
 if __name__ == "__main__":
     main()
